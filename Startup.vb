@@ -2,7 +2,7 @@
     ' Main display form
     Private myStartupForm As MainForm
     Private myStartupConsole As MainConsole.MainConsole
-    Private consoleMode As Boolean = False
+    Private consoleMode As Boolean = True
     Public debuglog As String = ""
     Private oWrite As System.IO.StreamWriter
     ' Delegate used to marshal back to the main UI thread
@@ -15,8 +15,8 @@
             strStartupArguments = System.Environment.GetCommandLineArgs
             For intCount = 0 To UBound(strStartupArguments)
                 Select Case strStartupArguments(intCount).ToLower
-                    Case "/nogui"
-                        consoleMode = True
+                    Case "/gui"
+                        consoleMode = False
                 End Select
             Next intCount
         Catch ex As Exception

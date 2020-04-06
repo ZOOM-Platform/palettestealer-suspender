@@ -19,7 +19,10 @@ Module MainConsole
         Public Sub Main()
             AttachConsole(CType(-1, IntPtr))
 
-            Console.WriteLine(vbCrLf & vbCrLf & "  ---- PaletteStealerSuspender (Console Mode) ----  ")
+            Console.WriteLine(vbCrLf & vbCrLf & "  ---- Palette Stealer Suspender (ZOOM Edition) ----  ")
+            Console.WriteLine(vbCrLf & "  ---- Based on PaletteStealerSuspender by Macuyiko ----  ")
+            Console.WriteLine(vbCrLf & "  ---- See ZOOM Github for source - https://git.io/JvALQ ----  ")
+            Console.WriteLine(vbCrLf)
 
             Dim strStartupArguments() As String
             Dim intCount As Integer
